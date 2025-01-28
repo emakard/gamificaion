@@ -1,9 +1,9 @@
-import Jeopardy from '../components/jeopardy'
+import JeopardyGame from '../components/jeopardy'
 
 export default function Home() {
   return (
     <main>
-      <Jeopardy />
+      <JeopardyGame />
     </main>
   )
 }

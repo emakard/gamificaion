@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .AlertDialogOverlay {
+    @apply fixed inset-0 bg-black/50 backdrop-blur-sm;
+    animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .AlertDialogContent {
+    @apply fixed left-1/2 top-1/2 max-h-[85vh] w-[90vw] max-w-md -translate-x-1/2 -translate-y-1/2 rounded-md bg-white p-6 shadow-lg;
+    animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

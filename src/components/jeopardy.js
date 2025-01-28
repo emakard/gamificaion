@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import  Card  from '../components/ui/card';
-import  Button  from '../components/ui/button';
+// import  Button  from '../components/ui/button';
+import { Button } from '@/components/ui/button.jsx';  // Explicitly importing from button.jsx
 import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogFooter, AlertDialogAction } from '../components/ui/alert-dialog';
 
 // const CATEGORIES = [

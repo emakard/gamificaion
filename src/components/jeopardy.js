@@ -203,7 +203,13 @@ const JeopardyGame = () => {
   };
 
   return (
+      
     <div className="p-4">
+
+      {/* Title */}
+      {/* <h1 className="text-4xl font-bold text-center text-blue-900 mb-8">Strategism Jeopardy</h1> */}
+      {/* Title */}
+      <h1 className="text-4xl font-extrabold text-center text-blue-900 mb-10 tracking-tight  bg-gradient-to-r from-blue-900 to-blue-600 bg-clip-text text-transparent drop-shadow-lg">Strategism Jeopardy</h1>
       {/* Team Scores */}
       <div className="flex justify-between mb-6">
         <div className={`text-2xl font-bold ${currentTeam === 'team1' ? 'text-blue-600' : ''}`}>
